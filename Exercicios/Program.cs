@@ -188,12 +188,144 @@ Console.WriteLine(dateTime.ToString(pt));
 CultureInfo pt = new CultureInfo("pt-BR");
 
 Console.WriteLine("Qual a cidade onde você mora? ");
-var cidade = Console.ReadLine();
+string cidade = Console.ReadLine();
 Console.WriteLine("Qual o valor da gasolina? ");
-var valorGasolina = Console.ReadLine();
+string valorGasolina = Console.ReadLine();
 
 var gasolinaConvertido = Convert.ToDecimal(valorGasolina);
-Console.WriteLine("Em " + cidade + " no dia " + DateTime.Now.ToString(pt) +
+var hoje = DateTime.Now;
+Console.WriteLine("Em " + cidade + " no dia " + hoje.ToString(pt) +
     " a gasolina está custando " + gasolinaConvertido);*/
 
-// --------------- AULA 4 ---------------
+// --------------- AULA 4 - ERROS ---------------
+
+// consertar esses erros:
+/*var date = new DateTime("2020", 07, 02, 22, 59, 59);
+string minhaString = new DateTime();
+Console.WriteLine("")*/
+
+
+/*var date = new DateTime(2020, 07, 02, 22, 59, 59);
+DateTime minhaString = new DateTime();
+Console.WriteLine("");
+return;
+Console.WriteLine("oi");
+Console.WriteLine(minhaString);*/
+
+// TRY CATCH
+/*var a = "OlaThays";
+try
+{
+    Convert.ToInt32(a);
+    Console.WriteLine("lalalla");
+}
+catch (Exception e)
+{
+    Console.WriteLine("Deu Erro");
+    Console.WriteLine(e.ToString());
+}*/
+
+/*Console.WriteLine("Digite o dia do seu aniversário no formato DD/MM/AAAA");
+string dataDeNascimentoStr = Console.ReadLine();
+string diaStr = dataDeNascimentoStr.Substring(0, 2);
+string mesStr = dataDeNascimentoStr.Substring(3, 2);
+string anoStr = dataDeNascimentoStr.Substring(6, 4);
+try
+{
+    short dia = Convert.ToInt16(diaStr);
+    short mes = Convert.ToInt16(mesStr);
+    short ano = Convert.ToInt16(anoStr);
+    var dataDeNascimentoDate = new DateTime(ano, mes, dia);
+    Console.WriteLine(dataDeNascimentoDate.DayOfWeek);
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Digite a data corretamente");
+    Console.WriteLine(ex.ToString());
+}
+*/
+
+// ------ operadores aritmeticos ------
+/*
+int i = 3;
+Console.WriteLine(i);
+Console.WriteLine(i++);
+Console.WriteLine(i);
+
+int k = 3;
+Console.WriteLine(k);
+Console.WriteLine(k--);
+Console.WriteLine(k);
+
+int j = 4;
+Console.WriteLine(j);
+Console.WriteLine(--j);
+Console.WriteLine(j);*/
+
+// exercicio calcular o resto da divisao por 2
+
+/*Console.WriteLine("Digite um número: ");
+var numero = Console.ReadLine();
+int divisao = Convert.ToInt32(numero);
+int resto = divisao % 2;
+Console.WriteLine(resto);*/
+
+/*int a = 10;
+//a += 20;
+a = a + 20;
+Console.WriteLine(a);
+
+int b = 10;
+//b *= 20;
+b = b * 20;
+Console.WriteLine(b);*/
+
+
+/*int a = 10;
+int b = 20;
+Console.WriteLine(a > b || b > 10); //true*/
+
+
+/*int a = 10;
+int b = 20;
+Console.WriteLine(a > b || b > 10); //true
+Console.WriteLine(a < b && b > 10); //true
+Console.WriteLine(a < b && b < 10); //false*/
+
+// ----- exercicio ----
+
+/*Console.WriteLine("Digite o primeiro número: ");
+var primeiroNum = Console.ReadLine();
+Console.WriteLine("Digite o segundo número: ");
+var segundoNum = Console.ReadLine();
+
+int primeiroInt = Convert.ToInt32(primeiroNum);
+int segundoInt = Convert.ToInt32(segundoNum);
+
+Console.WriteLine(primeiroInt >= segundoInt || primeiroInt < segundoInt);*/
+
+/* ----- outra solucao-----   
+
+Console.Write("Digite um número: ");
+int.TryParse(Console.ReadLine(), outintn1);
+Console.Write("Digite outro número: ");
+int.TryParse(Console.ReadLine(), outintn2);
+ 
+Console.WriteLine($"{​​​​​​​​​n1}​​​​​​​​​ >= {​​​​​​​​​n2}​​​​​​​​​: {​​​​​​​​​n1>=n2}​​​​​​​​​");
+*/
+
+/*Console.WriteLine("Digite um número:");
+string numero = Console.ReadLine();
+var numeroint = Convert.ToInt32(numero);
+
+int divisao = numeroint % 2;
+Console.WriteLine(divisao == 0);*/
+
+// ------ AULA 5 ------------
+
+
+
+
+
+
+
