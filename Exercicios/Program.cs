@@ -321,7 +321,247 @@ var numeroint = Convert.ToInt32(numero);
 int divisao = numeroint % 2;
 Console.WriteLine(divisao == 0);*/
 
-// ------ AULA 5 ------------
+// ------ AULA 5 IF ELSE ------------
+/*
+Console.WriteLine("Digite um numero");
+var umNumero = Console.ReadLine();
+Console.WriteLine("Digite outro numero");
+var outroNumero = Console.ReadLine();
+
+
+
+if (int.TryParse(umNumero, out int umNumeroInt) == false)
+{
+    Console.WriteLine("Digite um numero valido");
+}
+else
+if (int.TryParse(outroNumero, out int outroNumeroInt) == false)
+{
+    Console.WriteLine("Digite outro numero valido");
+}
+else
+    Console.WriteLine(umNumeroInt > outroNumeroInt && outroNumeroInt % 2 == 0);*/
+
+// OUTRA FORMA DE ESCREVER 
+/*Console.WriteLine("Digite um numero");
+var umNumero = Console.ReadLine();
+
+
+
+if (int.TryParse(umNumero, out int umNumeroInt) == false)
+{
+    Console.WriteLine("Digite um numero valido");
+}
+else // se o numero for valido
+{
+    Console.WriteLine("Digite outro numero");
+    var outroNumero = Console.ReadLine();
+
+
+
+    if (int.TryParse(outroNumero, out int outroNumeroInt) == false)
+    {
+        Console.WriteLine("Digite outro numero valido");
+    }
+    else // se o Segundo for valido
+    {
+        Console.WriteLine(umNumeroInt > outroNumeroInt && outroNumeroInt % 2 == 0);
+    }
+}*/
+
+// SWITCH CASE
+/*
+Console.WriteLine("Digite um mes");
+var mes = Console.ReadLine();
+var mesMinusculo = mes.ToLower();
+
+
+switch (mesMinusculo)
+{
+    case "janeiro":
+    case "março":
+    case "maio":
+    case "julho":
+    case "agosto":
+    case "outubro":
+    case "dezembro":
+        Console.WriteLine("Este mês tem 31 dias");
+        break;
+    case "fevereiro":
+        Console.WriteLine("Este mês tem 28 ou 29 dias");
+        break;
+    default:
+        Console.WriteLine("Este mês tem 30 dias");
+        break;
+}
+Console.WriteLine("o que executa depois do break");*/
+
+//MESMA SOLUCAO ESCRITO DE OUTRO JEITO
+/*
+var mes = Console.ReadLine();
+var mesMinusculo = mes.ToLower();
+switch (mesMinusculo)
+{
+    case "janeiro":
+    case "março":
+    case "maio":
+    case "julho":
+    case "agosto":
+    case "outubro":
+    case "dezembro":
+        Console.WriteLine("Este mês tem 31 dias");
+        break;
+    case "fevereiro":
+        Console.WriteLine("Este mês tem 28 ou 29 dias");
+        break;
+    case "abril":
+    case "junho":
+    case "setembro":
+    case "novembro":
+        Console.WriteLine("Este mês tem 30 dias");
+        break;
+    default:
+        Console.WriteLine("Digite um mes valido");
+        break;
+}
+Console.WriteLine("o que executa depois do break");*/
+
+// EXERCICIO PEÇA PARA O USUARIO DIGITAR UM NUMERO
+// IMPRIMA SE ELE E PAR SEM USAR O OPERADOR % E USANDO SWITH
+
+// EXEMPLO CONVERTENDO PARA INTEIRO
+/*
+Console.Write("Digite um número: ");
+string n = Console.ReadLine();
+
+int.TryParse(n.Substring((n.Length - 1), 1), out int digFinal);
+
+switch (digFinal)
+{
+    case 2:
+    case 4:
+    case 6:
+    case 8:
+    case 0:
+        Console.WriteLine("Este número é par");
+        break;
+    default:
+        Console.WriteLine("Este número é ímpar");
+        break;
+
+}*/
+
+//EXEMPLO UTILIZANDO STRINGS
+/*Console.Write("Digite um número: ");
+string n = Console.ReadLine();
+
+
+
+string ultimoDigito = n.Substring((n.Length - 1), 1);
+
+
+
+switch (ultimoDigito)
+{
+    case "2":
+    case "4":
+    case "6":
+    case "8":
+    case "0":
+        Console.WriteLine("Este número é par");
+        break;
+    default:
+        Console.WriteLine("Este número é ímpar");
+        break;
+}*/
+
+// LAÇO FOR
+/*
+Console.WriteLine("Digite um numero");
+var numeroStr = Console.ReadLine();
+
+var numero = Convert.ToInt32(numeroStr);
+
+for (int i = 0; i < numero; i++)
+{
+    Console.WriteLine($"olha aqui eu no loop - {i}");
+}*/
+
+/*Console.Write("Digite um número: ");
+int.TryParse(Console.ReadLine(), out int n1);
+Console.Write("Digite outro número: ");
+int.TryParse(Console.ReadLine(), out int n2);
+
+ 
+
+int soma = 0;
+for (int i = 0; i < n2; i++) {
+    soma += n1;
+}
+Console.WriteLine($"A multiplicação entre {n1} e {n2} é {soma}");*/
+
+// LISTA
+/*List<int> minhaListaDeInteiros = new List<int>();
+minhaListaDeInteiros.Add(10);
+minhaListaDeInteiros.Add(20);
+minhaListaDeInteiros.Add(30);
+minhaListaDeInteiros.Add(40);
+minhaListaDeInteiros.Add(55);
+minhaListaDeInteiros.Add(550);
+minhaListaDeInteiros.Add(10);
+
+foreach (var meuInteiro in minhaListaDeInteiros)
+{
+    Console.WriteLine(meuInteiro);
+}*/
+
+// EXERCICIO LEIA UMA PALAVRA, ESCREVA ELA NA VERTICAL USANDO FOREACH
+/*
+Console.Write("Digite uma palavra: ");
+string word = Console.ReadLine();
+
+foreach (char letra in word)
+{
+    Console.WriteLine(letra);
+}*/
+
+// WHILE
+
+/*var minhaPalavra = Console.ReadLine();
+var minhaPalavraArray = minhaPalavra.ToCharArray();
+int i = 0;
+while (i < minhaPalavraArray.Length)
+{
+    Console.WriteLine(i + " - " + minhaPalavraArray[i]);
+    i++;
+}*/
+
+// DO WHILE 
+
+/*var minhaPalavra = Console.ReadLine();
+
+var minhaPalavraArray = minhaPalavra.ToCharArray();
+
+int i = 0;
+do
+{
+    Console.WriteLine(i + " - " + minhaPalavraArray[i]);
+    i++;
+} while (i < minhaPalavraArray.Length);*/
+
+// exercício exibir palavra invertida
+/*
+Console.WriteLine("Digite uma palavra");
+var palavra = Console.ReadLine();
+var palavraCharArray = palavra.ToCharArray();
+string palavraInvertida = "";
+for (int i = palavra.Length - 1; i >= 0; i--)
+{
+    palavraInvertida += palavraCharArray[i];
+}
+Console.WriteLine(palavraInvertida);*/
+
+
 
 
 
