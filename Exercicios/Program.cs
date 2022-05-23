@@ -549,7 +549,46 @@ do
     i++;
 } while (i < minhaPalavraArray.Length);*/
 
-// exercício exibir palavra invertida
+// ---- EXERCICIO----
+/*int soma = 0;
+string numeroStr;
+int numero = 0;
+do
+{
+    Console.WriteLine("Digite um numero para somar ou 0 para sair");
+    numeroStr = Console.ReadLine();
+    numero = Convert.ToInt32(numeroStr);
+    soma += numero;
+}
+while (numero != 0);
+Console.WriteLine(soma);*/
+
+// ------- EQUAÇÃO DO SEGUNDO GRAU COM BIBLIOTECA MATH --------
+
+/*int a, b, c;
+double delta;
+double raizDelta;
+double primeiraRaiz;
+double segundaRaiz;
+
+Console.WriteLine("Digite o valor de A ");
+int.TryParse(Console.ReadLine(), out a);
+Console.WriteLine("Digite o valor de B ");
+int.TryParse(Console.ReadLine(), out b);
+Console.WriteLine("Digite o valor de C ");
+int.TryParse(Console.ReadLine(), out c);
+
+delta = Math.Pow(b, 2) - (4 * a * c);
+raizDelta = Math.Sqrt(delta);
+
+primeiraRaiz = (-b + raizDelta) / (2 * a);
+segundaRaiz = (-b - raizDelta) / (2 * a);
+
+Console.WriteLine($"Primeira raiz {primeiraRaiz}, segunda raiz {segundaRaiz}");
+*/
+
+
+// ------------- exercício exibir palavra invertida -------------
 /*
 Console.WriteLine("Digite uma palavra");
 var palavra = Console.ReadLine();
