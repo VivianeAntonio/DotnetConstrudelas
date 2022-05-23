@@ -598,10 +598,7 @@ for (int i = palavra.Length - 1; i >= 0; i--)
 {
     palavraInvertida += palavraCharArray[i];
 }
-Console.WriteLine(palavraInvertida);*/
-
-
-
+Console.WriteLine(palavraInvertida);*/    
 
 
 
